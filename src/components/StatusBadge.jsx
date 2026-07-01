@@ -1,24 +1,29 @@
+import React from 'react';
+
 function StatusBadge({ status }) {
-  let color = '';
-    if (status === 'Approved') {
-        color = 'green';
-    } else if (status === 'Pending') {
-        color = 'orange';
-    } else if (status === 'Rejected') {
-        color = 'red';
-    }
+  let badgeColor = 'orange'; // Default Pending
+  
+  if (status === 'Approved') {
+    badgeColor = 'green';
+  } else if (status === 'Rejected') {
+    badgeColor = 'red';
+  }
+
+  const badgeStyle = {
+    borderRadius: '5px',
+    padding: '5px 10px',
+    backgroundColor: badgeColor,
+    color: 'white',
+    fontWeight: 'bold',
+    display: 'inline-block',
+    fontSize: '12px'
+  };
 
   return (
-    <span className={`badge ${color}`}>
+    <span style={badgeStyle}>
       {status}
-      <style>
-        border-radius: 5px;
-        padding: 5px 10px;
-        background-color: {color};
-        color: white;
-      </style>
-
     </span>
   );
 }
+
 export default StatusBadge;

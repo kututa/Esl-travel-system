@@ -1,17 +1,152 @@
-# React + Vite
+# ✈️ ESL Travel Management System (TRMS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern React-based dashboard for managing, tracking, and monitoring employee travel requests within an organization. The application provides a clean, responsive interface for handling travel approvals, monitoring request statuses, and viewing travel-related metrics.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Dashboard with travel request statistics
 
-## React Compiler
+  * Total Requests
+  * Approved Requests
+  * Pending Requests
+  * Rejected Requests
+  * Expense Summary
+* Fixed header and sidebar navigation
+* Responsive dashboard layout
+* Employee travel requests table
+* Color-coded status badges
+* Reusable React components
+* Component-based styling using JavaScript objects
+* Fast development with Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-# Esl-travel-system
+* **Frontend:** React 18+
+* **Build Tool:** Vite
+* **Icons:** React Icons
+* **Styling:** Inline JavaScript object styling (Component-based)
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+├── components/
+│   ├── Header.jsx
+│   ├── SideBar.jsx
+│   ├── DashboardCard.jsx
+│   ├── TravelTable.jsx
+│   └── StatusBadge.jsx
+├── data/
+│   └── travelRequests.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/kututa/Esl-travel-system.git
+```
+
+Navigate into the project folder:
+
+```bash
+cd Esl-travel-system
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Install React Icons:
+
+```bash
+npm install react-icons
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open your browser and visit:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## 📸 Dashboard Modules
+
+* Dashboard Overview
+* Travel Requests
+* Reports
+* Approval Queue
+* Expense Management
+* Analytics
+* Notifications
+* Calendar
+* Profile
+* Settings
+
+---
+
+## 🎨 Styling
+
+The project uses **component-level styling** with JavaScript style objects. Each component manages its own styles, making the codebase easier to maintain and reducing styling conflicts.
+
+Example:
+
+```jsx
+const headerStyle = {
+  position: "fixed",
+  top: 0,
+  width: "100%",
+  backgroundColor: "#fff",
+  boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
+  zIndex: 1000,
+};
+```
+
+---
+
+## 🔮 Future Improvements
+
+* User authentication
+* Role-based access control
+* Backend integration
+* Database support
+* Email notifications
+* PDF report generation
+* Search and filtering
+* Dark mode
+* Mobile optimization
+
+---
+
+## 👨‍💻 Author
+
+**Vincent Kututa Alex**
+
+Computer Science Graduate | Full Stack Web Developer
+
+GitHub: [https://github.com/kututa](https://github.com/kututa)
+
+---
+
+## 📄 License
+
+This project is intended for educational and portfolio purposes.
