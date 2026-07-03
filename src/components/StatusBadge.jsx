@@ -1,26 +1,16 @@
-import React from 'react';
+import React from "react";
 
 function StatusBadge({ status }) {
-  let badgeColor = 'orange'; // Default Pending
-  
-  if (status === 'Approved') {
-    badgeColor = 'green';
-  } else if (status === 'Rejected') {
-    badgeColor = 'red';
+  let statusClass = "status-pending";
+
+  if (status === "Approved") {
+    statusClass = "status-approved";
+  } else if (status === "Rejected") {
+    statusClass = "status-rejected";
   }
 
-  const badgeStyle = {
-    borderRadius: '5px',
-    padding: '5px 10px',
-    backgroundColor: badgeColor,
-    color: 'white',
-    fontWeight: 'bold',
-    display: 'inline-block',
-    fontSize: '12px'
-  };
-
   return (
-    <span style={badgeStyle}>
+    <span className={`status-badge ${statusClass}`}>
       {status}
     </span>
   );
