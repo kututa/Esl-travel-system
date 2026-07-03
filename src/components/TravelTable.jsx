@@ -1,6 +1,6 @@
 import React from "react";
 import StatusBadge from "./StatusBadge";
-
+import "../components/styles/TravelTable.css";
 function TravelTable({ requests }) {
   return (
     <div className="table-container">

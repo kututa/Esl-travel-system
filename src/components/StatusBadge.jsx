@@ -1,4 +1,5 @@
 import React from "react";
+import "../components/styles/StatusBadge.css";
 
 function StatusBadge({ status }) {
   let statusClass = "status-pending";

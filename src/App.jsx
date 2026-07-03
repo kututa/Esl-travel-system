@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import SideBar from "./components/SideBar";
 import DashboardCard from "./components/DashboardCard";
 import TravelTable from "./components/TravelTable";
-
+import "./components/styles/app.css";
 import {
   FaClipboardList,
   FaCheckCircle,

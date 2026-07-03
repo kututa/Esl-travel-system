@@ -1,4 +1,5 @@
 import React from "react";
+import "../components/styles/SideBar.css";
 
 function SideBar() {
   const menuItems = [

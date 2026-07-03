@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../components/styles/DashboardCard.css";
 function DashboardCard({ title, value, icon }) {
   return (
     <div className="dashboard-card">

@@ -1,0 +1,59 @@
+
+/* ===========================
+   Travel Table
+=========================== */
+
+.table-container {
+  margin-bottom: 20px;
+  padding: 20px;
+
+  background: #fff;
+
+  border-radius: 8px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  overflow-x: auto;
+}
+
+.travel-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Header */
+
+.travel-table th {
+  padding: 12px;
+
+  text-align: left;
+
+  background: #f0f0f0;
+
+  border-bottom: 1px solid #ddd;
+
+  font-weight: 600;
+}
+
+/* Cells */
+
+.travel-table td {
+  padding: 12px;
+
+  text-align: left;
+
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hover Effect */
+
+.travel-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+
+.travel-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* travel table ends here   */

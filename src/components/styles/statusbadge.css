@@ -1,0 +1,26 @@
+
+/* status-badge stars here  */
+/* Status Badge */
+.status-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Status Colors */
+.status-approved {
+  background-color: #16a34a; /* Green */
+}
+
+.status-pending {
+  background-color: #f59e0b; /* Orange */
+}
+
+.status-rejected {
+  background-color: #dc2626; /* Red */
+}
+
+/* .status-badge ends here  */

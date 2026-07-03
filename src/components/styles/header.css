@@ -1,0 +1,59 @@
+
+/* ===========================
+   Header
+=========================== */
+.headerStyle {
+  position: fixed;
+  top: 0;
+  left: 260px;
+  right: 0;
+  height: 80px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0 40px;
+
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid #e2e8f0;
+
+  z-index: 1000;
+
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Header visibility */
+.headerStyle.hidden {
+  transform: translateY(-100%);
+}
+
+.headerStyle.visible {
+  transform: translateY(0);
+}
+
+/* ===========================
+   Title
+=========================== */
+.titleStyle {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #0f172a;
+}
+
+/* ===========================
+   Subtitle
+=========================== */
+.subtitleStyle {
+  margin: 4px 0 0;
+  font-size: 13px;
+  font-weight: 400;
+  color: #64748b;
+}
+
+/*end of header, title, and subtitle styles */
